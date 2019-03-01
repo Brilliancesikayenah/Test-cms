@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Log ind</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/stylesheets/signin.css" rel="stylesheet">
+  </head>
+
+  <body class="text-center">
+    <form class="form-signin" action="/login" method="POST">
+      <h1 class="h3 mb-3 font-weight-normal">Log ind</h1>
+      <label for="inputEmail" class="sr-only">Brugernavn</label>
+      <input type="text" id="inputEmail" class="form-control" placeholder="F.eks. admin" name="username" autofocus>
+      <label for="inputPassword" class="sr-only">Adgangskode</label>
+      <input type="password" id="inputPassword" class="form-control" name="password" placeholder="meget hemmeligt">
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"> Husk mig
+        </label>
+      </div>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Log ind</button>
+      <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
+    </form>
+
+    <section>
+        <h1 class="loginStor">opret bruger</h1>
+
+        <form action="/signup" method="POST">
+            <label for="brugernavn">Brugernavn</label>                                           <br>
+            <input type="text" name="brugernavn">              <br>
+            <label for="Password">Kodeord:</label>                                     <br>
+            <input type="password" name="Password">           <br>
+            <input type="checkbox" name="lorem" value="lorem"> <p>Lorem ipsum dolor sit amet.</p>          <br>
+            
+            <button type="submit" value="Submit">opret konto</button>
+        </form> 
+  </body>
+</html>

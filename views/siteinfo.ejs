@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Administrationspanel</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/dashboard.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="/admin">Cat_cafe</a>
+      <input class="form-control form-control-dark w-100" type="text" placeholder="Søg" aria-label="Search">
+      <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+          <a class="nav-link" href="/logout">Log ud</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="/admin">
+                  <span data-feather="home"></span>
+                  Admin-panel
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/admin/pages">
+                  <span data-feather="file"></span>
+                  Sider
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/admin/products">
+                  <span data-feather="shopping-cart"></span>
+                  Produkter
+								</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/admin/users">
+                  <span data-feather="users"></span>
+                  Brugere
+                </a>
+              </li>
+            </ul>
+
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>Andet</span>
+            </h6>
+            <ul class="nav flex-column mb-2">
+              <li class="nav-item">
+                <a class="nav-link" href="/admin/categories">
+                  <span data-feather="file-text"></span>
+                  Kategorier
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/admin/brands">
+                  <span data-feather="file-text"></span>
+                  Producenter
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/admin/siteinfo">
+                  <span data-feather="file-text"></span>
+                  Site-information <span class="sr-only">(aktiv side)</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">Site-information</h1>
+          </div>
+					
+					<form action="">
+						<div class="row">
+							<div class="col-4">
+								<label for="site_title">Site-titel</label>
+								<input type="text" class="form-control" name="site_title" id="site_title" value="Cat_cafe">
+							</div>
+            </div>
+						<div class="row">
+							<div class="col-4">
+								<label for="address">Adresse</label>
+								<input type="text" class="form-control" name="address" id="address" value="Smørumovrenedrevej 42">
+							</div>
+            </div>
+						<div class="row">
+              <div class="col-1">
+                <label for="zipcode">Postnr.</label>
+								<input type="number" class="form-control" name="zipcode" id="zipcode" value="9436">
+							</div>
+							<div class="col-3">
+                <label for="city">By</label>
+								<input type="text" class="form-control" name="city" id="city" value="Smørumovrenedre">
+							</div>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <label for="telephone">Telefon</label>
+                <input type="tel" class="form-control" name="telephone" id="telephone" value="+45 192 837 46">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <label for="email">E-mail</label>
+                <input type="email" class="form-control" name="email" id="email" value="hello@Cat_cafe.dk">
+              </div>
+            </div>
+            <div class="row col-4">
+              <button type="submit" class="btn btn-primary" style="margin-top:1em">Gem ændringer</button>
+            </div>
+					</form>
+
+        </main>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="bootstrap.min.js"></script>
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace()
+    </script>
+
+  </body>
+</html>

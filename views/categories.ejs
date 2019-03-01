@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Administrationspanel</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/dashboard.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="/admin">Cat_cafe</a>
+      <input class="form-control form-control-dark w-100" type="text" placeholder="Søg" aria-label="Search">
+      <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+          <a class="nav-link" href="/logout">Log ud</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="/admin">
+                  <span data-feather="home"></span>
+                  Admin-panel
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/admin/pages">
+                  <span data-feather="file"></span>
+                  Sider
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/admin/products">
+                  <span data-feather="shopping-cart"></span>
+                  Produkter
+								</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/admin/users">
+                  <span data-feather="users"></span>
+                  Brugere
+                </a>
+              </li>
+            </ul>
+
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>Andet</span>
+            </h6>
+            <ul class="nav flex-column mb-2">
+              <li class="nav-item">
+                <a class="nav-link active" href="/admin/categories">
+                  <span data-feather="file-text"></span>
+                  Kategorier <span class="sr-only">(aktiv side)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/admin/brands">
+                  <span data-feather="file-text"></span>
+                  Producenter
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/admin/siteinfo">
+                  <span data-feather="file-text"></span>
+                  Site-information
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">Kategorier</h1>
+          </div>
+					
+					<table class="table table-striped table-sm table-hover">
+						<thead>
+							<tr>
+								<th style="width:70px"></th>
+								
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<a href="#!"><span data-feather="edit"></span></a>
+									<a href="#!" class="delete"><span data-feather="trash-2"></span></a>
+								</td>
+							
+              </tr>
+							<tr>
+								<td>
+									<a href="#!"><span data-feather="edit"></span></a>
+									<a href="#!" class="delete"><span data-feather="trash-2"></span></a>
+								</td>
+								
+							</tr>
+							<tr>
+								<td>
+									<a href="#!"><span data-feather="edit"></span></a>
+									<a href="#!" class="delete"><span data-feather="trash-2"></span></a>
+								</td>
+							
+							</tr>
+							<tr>
+								<td>
+									<a href="#!"><span data-feather="edit"></span></a>
+									<a href="#!" class="delete"><span data-feather="trash-2"></span></a>
+								</td>
+								
+							</tr>
+						</tbody>
+					</table>
+
+        </main>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="bootstrap.min.js"></script>
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace()
+    </script>
+
+  </body>
+</html>
